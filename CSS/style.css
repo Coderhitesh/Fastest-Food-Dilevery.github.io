@@ -1,0 +1,179 @@
+/* CSS Reset */
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+/* CSS Variable */
+
+:root {
+    --navbar-height: 59px;
+}
+
+/* Navigation Bar */
+
+#navbar {
+    display: flex;
+    align-items: center;
+    position: relative;
+    top: 0px;
+}
+
+#navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0px;
+    left: 0px;
+    z-index: -1;
+    opacity: 0.3;
+}
+
+/* Navigation Bar : Logo And Image */
+
+#logo {
+    margin: 4px 20px;
+}
+
+#logo img {
+    height: 40px;
+    margin: 1px 2px;
+}
+
+/* Navigation Bar : List Styling */
+
+#navbar ul{
+    display: flex;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+#navbar ul li{
+    list-style: none;
+    font-size: 1.2rem;
+}
+
+#navbar ul li a{
+    color: white;
+    display: block;
+    padding: 1px 36px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+
+#navbar ul li a:hover{
+   color: black;
+   background-color: white;
+}
+
+/* Home Section */
+#home{
+    display: flex;
+    flex-direction: column;
+    padding: 2px 200px;
+    height: 511px;
+    justify-content: center;
+    align-items: center;
+}
+
+#home::before{
+    content: "";
+    position: absolute;
+   background:url(../bg2.jpg) no-repeat center center/cover ;
+    height: 100%;
+    width: 100%;
+    top: 0px;
+    left: 0px;
+    z-index: -1;
+    opacity: 0.96;
+}
+
+#home h1{
+    color: white;
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif ;
+}
+
+#home p{
+    color: white;
+    text-align: center;
+    font-size: 1.2rem;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+/* services section */
+
+#services{
+    /* margin: 34px; */
+    display: flex;
+}
+#services .box{
+    border: 2px solid brown;
+    padding: 10px;
+    margin: 4px;
+    border-radius: 12px;
+    background-color: #f3f5e4;
+}
+
+#services .box img{
+    height: 100px;
+    margin: auto;
+    display: block;
+}
+#services .box p{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+#services{}
+#services{}
+
+/* Client Section  */
+
+#client-section{
+    margin: 17px 1px;
+}
+
+
+#client-item-detail{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.client-item img{
+    width: 130px;
+}
+
+#client-item{
+    padding: 2px 92px;
+}
+
+
+/* Utility Classes */
+.h-primary{
+    font-size: 2.8rem;
+    padding: 12px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.h-secondary{
+    font-size: 1.6rem;
+    padding: 12px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.btn{
+    padding: 4px 10px;
+    border: 2px solid white;
+    background-color: grey;
+    color: white;
+    margin: 10px;
+    font-size: 1.11rem;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.center{
+   text-align: center;
+}
